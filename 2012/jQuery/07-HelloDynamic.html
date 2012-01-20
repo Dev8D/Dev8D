@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/07-HelloDynamic.css" />
+
+  <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict();  // Don't define "$" variable for jQuery
+  </script>
+
+  <script type="text/javascript" src="js/07-HelloDynamic.js/"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() { Hello.registerHandlers() });
+  </script>
+
+</head>
+
+<body>                                                                  
+  <h2>
+    Hello <span id="name">?</span>&nbsp;
+    <button id="showNameEntryBox">
+      <span class="showhide">Show</span>
+      entry form
+    </button>
+  </h2>
+
+  <div id="NameEntryBox">
+    Enter your name here: <input id="yourname"></input>
+    <button id='update'>Update</button>
+    <br/>
+    <br/>
+  </div>
+
+  <button id="showSelectorButtons">
+    <span class="showhide">Show</span>
+    selector buttons
+  </button>
+
+  <div id="SelectorButtons">
+    <div>
+    <button id='flashfirst'>flash first</button>
+    <button id='flashsecond'>flash second</button>
+    </div>  
+    <div>
+    <button id='byname'>select by name</button>
+    <button id='byclass'>select by class</button>
+    <button id='bynesting'>select by nesting</button>
+    <button id='byattribute'>select by attribute</button>
+    <button id='bypos'>select by position</button>
+    </div>  
+  </div>  
+
+  <div>
+    <ol>
+      <li id="first">First
+        <ul>
+          <li class='aaa' test="select">1 sub 1</li>
+          <li class='bbb'>1 sub 2</li>
+        </ul>
+      </li>
+      <li id="second" test="select">Second
+        <ul>
+          <li class='bbb'>2 sub 1</li>
+          <li class='aaa'>2 sub 2</li>
+        </ul>
+      </li>
+      <li id="third">Third
+        <ul>
+          <li class='aaa'>3 sub 1</li>
+          <li class='bbb' test="select">3 sub 2</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+</body>                                                                 
+
+</html>
