@@ -38,7 +38,7 @@ if ( typeof(Hello) == "undefined" ) Hello = {};
 
   Hello.flashByPos = function () { 
     Hello.flash($('li').eq(3), 'textred'); 
-    Hello.flash($('li').eq(3), 'textblue'); 
+    Hello.flash($('li').eq(4), 'textblue'); 
   };
 
   Hello.flash = function (jqueryobject, cssclass) {

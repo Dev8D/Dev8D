@@ -2,8 +2,45 @@
 
 <head>
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="js/06-HelloModular.js"></script>
-<link rel="stylesheet" type="text/css" href="css/06-HelloModular.css" />
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#name').text("World");
+
+    $('#update').click(function() {
+      $('#name').text($('#yourname').val());
+      $('#name').css('color', 'red');
+      $('#name').css({ 'font-family': 'cursive', 'font-size': 'larger'});
+    });
+
+    $('#flashfirst').click(flashFirstById);
+    $('#flashsecond').click(flashSecondById);
+
+    $('#byname').click(flashByName);
+    $('#byclass').click(flashByClass);
+    $('#bynesting').click(flashByNesting);
+    $('#byattribute').click(flashByAttribute);
+    $('#bypos').click(flashByPos);
+  });
+
+  function flashFirstById() { flash($('#first'), 'highlightyellow'); };
+  function flashSecondById() { flash($('#second'), 'highlightpink'); };
+  function flashByName() { flash($('button'), 'highlightgreen'); };
+  function flashByClass() { flash($('.aaa'), 'highlightblue'); };
+  function flashByNesting() {
+    flash($('ol li'), 'textred'); 
+    flash($('ul li'), 'textgreen'); 
+  };
+  function flashByAttribute() { flash($('[test="select"]'), 'textgreen'); };
+  function flashByPos() { 
+    flash($('li').eq(3), 'textred'); 
+    flash($('li').eq(4), 'textblue'); 
+  };
+  function flash(jqueryobject, cssclass) {
+    jqueryobject.each( function(index, elem) {
+      $(elem).toggleClass(cssclass);
+    });
+  };
+</script>
 
 <style>
   .highlightyellow { background-color:yellow; }
