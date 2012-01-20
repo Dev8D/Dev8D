@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<!-- Alternative:
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+-->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#name').text("World");
+
+    $('#update').click(function() {
+      $('#name').text($('#yourname').val());
+      $('#name').css('color', 'red');
+      $('#name').css({ 'font-family': 'cursive', 'font-size': 'larger'});
+    });
+    $('#flashfirst').click(flashFirstById);
+    $('#flashsecond').click(flashSecondById);
+  });
+
+  function flashFirstById() { flashYellow($('#first')); };
+  function flashSecondById() { flashPink($('#second')); };
+
+  function flashYellow(jqueryobject){
+    jqueryobject.each( function(index, elem) {
+        $(elem).toggleClass('highlightyellow');
+      });
+  };
+
+  function flashPink(jqueryobject){
+    jqueryobject.each( function(index, elem) {
+        $(elem).toggleClass('highlightpink');
+      });
+  };
+</script>
+
+<style>
+  .highlightyellow { background-color:yellow; }
+  .highlightpink { background-color:rgb(255,128,128); }
+</style>
+
+</head>
+
+<body>                                                                  
+  <h2>Hello <span id="name">?</span></h2>
+  <div>
+  Enter your name here: <input id="yourname"></input>
+  <button id='update'>Update</button>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div>
+  <button id='flashfirst'>flash first</button>
+  <button id='flashsecond'>flash second</button>
+  </div>  
+
+  <div>
+    <ol>
+      <li id="first">First
+        <ul>
+          <li>1 sub 1</li>
+          <li>1 sub 2</li>
+        </ul>
+      </li>
+      <li id="second">Second
+        <ul>
+          <li>2 sub 1</li>
+          <li>2 sub 2</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+</body>                                                                 
+
+</html>

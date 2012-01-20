@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/06-HelloModular.css" />
+
+  <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict();  // Don't define "$" variable for jQuery
+  </script>
+
+  <script type="text/javascript" src="js/06-HelloModular.js/"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function() { Hello.registerHandlers() });
+  </script>
+
+</head>
+
+<body>                                                                  
+  <h2>Hello <span id="name">?</span></h2>
+  <div>
+  Enter your name here: <input id="yourname"></input>
+  <button id='update'>Update</button>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div>
+  <button id='flashfirst'>flash first</button>
+  <button id='flashsecond'>flash second</button>
+  </div>  
+
+  <div>
+  <button id='byname'>select by name</button>
+  <button id='byclass'>select by class</button>
+  <button id='bynesting'>select by nesting</button>
+  <button id='byattribute'>select by attribute</button>
+  <button id='bypos'>select by position</button>
+  </div>  
+
+  <div>
+    <ol>
+      <li id="first">First
+        <ul>
+          <li class='aaa' test="select">1 sub 1</li>
+          <li class='bbb'>1 sub 2</li>
+        </ul>
+      </li>
+      <li id="second" test="select">Second
+        <ul>
+          <li class='bbb'>2 sub 1</li>
+          <li class='aaa'>2 sub 2</li>
+        </ul>
+      </li>
+      <li id="third">Third
+        <ul>
+          <li class='aaa'>3 sub 1</li>
+          <li class='bbb' test="select">3 sub 2</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+</body>                                                                 
+
+</html>
