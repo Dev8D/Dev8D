@@ -5,7 +5,7 @@ needed to conduct the session offline.  These can be downloaded as a ZIP
 file via the github "ZIP" tab for the repository.
 
 
-Part 1: Basic jQuery
+Part 1: Basic jQuery (code and slides)
 1-1. Hello world
 1-2. Hello world personalized - simple content manipulation
 1-3. Hello world styled - simple style manipulation
@@ -19,21 +19,24 @@ Part 1: Basic jQuery
 Part 2: ??
 
 
-Part 3: Further jQuery
+Part 3: Further jQuery (code only for these)
 3-1: Fully dynamic page content
 3-2: Ajax calls (and same-origin restriction)
+     - 08-Roadworks.html
 3-3: Multi-stage call-backs
+     - 09-RoadworksUnplanned.html
 3-4: Using plugins
+     - 10-RoadworksCollapser.html
      - http://archive.plugins.jquery.com/projects/plugins
      - http://www.aakashweb.com/resources/pages/demos/jquery-collapser/
 3-5: Creating plugins
-     - http://docs.jquery.com/Plugins/Authoring
-
 3-6: jQuery-associated data
+     - 11-RoadworksSelectorPlugin.html
+     - http://docs.jquery.com/Plugins/Authoring    
 3-7: qunit: jQuery unit testing
+     @@TODO: provide simple unit test for selector plugin
 
 Part 4: ??
-
 
 
 ----
