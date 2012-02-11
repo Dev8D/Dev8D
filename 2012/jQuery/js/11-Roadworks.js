@@ -2,6 +2,7 @@ if ( typeof(Roadworks) == "undefined" ) Roadworks = {};
 
 (function ($) {
 
+  var _rowclass    = null;
   var _datatarget  = null;
   var _errortarget = null;
   var _callback    = null;
@@ -11,8 +12,9 @@ if ( typeof(Roadworks) == "undefined" ) Roadworks = {};
     target.empty();
   };
 
-  Roadworks.LoadData = function (fileuri, target, error, callback)
+  Roadworks.LoadData = function (fileuri, rowclass, target, error, callback)
   {
+    _rowclass    = rowclass
     _datatarget  = target;
     _errortarget = error;
     _callback    = callback;
@@ -32,7 +34,7 @@ if ( typeof(Roadworks) == "undefined" ) Roadworks = {};
     _errortarget.append($("<div>"+status+"</div>"));
     $(data).find("situation").each(function(index) {
       elem   = $(this);       // make jQuery object for next DOM element
-      newrow = $("<tr/>");
+      newrow = $("<tr class='"+_rowclass+"'/>");
       $("<td/>").text(elem.attr("id")).appendTo(newrow);
       $("<td/>").text(elem.find("groupOfLocations descriptor value").text()).appendTo(newrow);
       $("<td/>").text(elem.find("situationRecord validity validityTimeSpecification overallStartTime").text()).appendTo(newrow);

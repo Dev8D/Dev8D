@@ -1,14 +1,29 @@
 <html>
 
 <head>
+<link rel="stylesheet" type="text/css" href="css/Roadworks.css" />
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="js/09-RoadworksUnplanned.js/"></script>
+<script type="text/javascript" src="js/11-SelectorPlugin.js/"></script>
+<script type="text/javascript" src="js/11-Roadworks.js/"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     Roadworks.InitData( $("#ListRoadWorks") );
-    Roadworks.LoadData( "Unplanned.xml", $("#ListRoadWorks"), $("#RequestStatus"), function() {
-      Roadworks.LoadData( "Roadworks.xml", $("#ListRoadWorks"), $("#RequestStatus"), function() {});
-    });
+    // Add data with class information for each row
+    Roadworks.LoadData( "Unplanned.xml", "unplanned", $("#ListRoadWorks"), $("#RequestStatus"), 
+      function() {
+        Roadworks.LoadData( "Roadworks.xml", "planned", $("#ListRoadWorks"), $("#RequestStatus"),
+          function() {});
+      });
+    // Activate selection option
+    $("#Selector").mySelector(
+      { target:  "#ListRoadWorks tr"
+      , showing: "#Showing"
+      , selections: [ { label: "planned", selector: ".planned" }
+                    , { label: "unplanned", selector: ".unplanned" }
+                    , { label: "planned and unplanned", selector: ".planned, .unplanned" }
+                 ]
+      , defaultselection: 2
+      });
   });
 </script>
 </head>
@@ -19,6 +34,8 @@
   <p>Source: <a href="http://hatrafficinfo.dft.gov.uk/feeds/datex/England/UnplannedEvent/content.xml">http://hatrafficinfo.dft.gov.uk/feeds/datex/England/UnplannedEvent/content.xml</a></p>
   <p>Linked from: <a href="http://data.gov.uk/dataset/live-traffic-information-from-the-highways-agency-road-network">http://data.gov.uk/dataset/live-traffic-information-from-the-highways-agency-road-network</a>.</p>
   <p>Local copies in file <code>Roadworks.xml</code> and <code>Unplanned.xml</code> (to avoid same-origin restriction problems)</p>
+  <h3>Showing <span id="Showing">(Select planned/unplanned/all)</span></h3>
+  <h4>Show: <button id="Selector">(Select planned/unplanned/all)</button></h4>
   <div>
     <table>
       <thead>
