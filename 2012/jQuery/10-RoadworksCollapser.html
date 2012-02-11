@@ -2,20 +2,33 @@
 
 <head>
 <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
-<script type="text/javascript" src="js/08-Roadworks.js/"></script>
+<script type="text/javascript" src="js/jquery.collapser.js/"></script>
+<script type="text/javascript" src="js/09-RoadworksUnplanned.js/"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    Roadworks.LoadData( "Roadworks.xml", $("#ListRoadWorks"), $("#RequestStatus") );
+    Roadworks.InitData( $("#ListRoadWorks") );
+    Roadworks.LoadData( "Unplanned.xml", $("#ListRoadWorks"), $("#RequestStatus"), function() {
+      Roadworks.LoadData( "Roadworks.xml", $("#ListRoadWorks"), $("#RequestStatus"), function() {});
+    });
+    $('#collapser').collapser({
+    	target: '#ListRoadWorks tr',
+    	effect: 'fade',
+    	changeText: true,
+    	expandHtml: '<i>Expand rows...</i>',
+    	collapseHtml: '<i>Collapse rows...</i>',
+        }, (function () {}), (function () {}));
   });
 </script>
 </head>
 
 <body>                                                                  
-  <h2>Planned roadworks from data.gov.uk</h2>
+  <h2>Planned and unplanned roadworks from data.gov.uk</h2>
   <p>Source: <a href="http://hatrafficinfo.dft.gov.uk/feeds/datex/England/CurrentPlanned/content.xml">http://hatrafficinfo.dft.gov.uk/feeds/datex/England/CurrentPlanned/content.xml</a></p>
+  <p>Source: <a href="http://hatrafficinfo.dft.gov.uk/feeds/datex/England/UnplannedEvent/content.xml">http://hatrafficinfo.dft.gov.uk/feeds/datex/England/UnplannedEvent/content.xml</a></p>
   <p>Linked from: <a href="http://data.gov.uk/dataset/live-traffic-information-from-the-highways-agency-road-network">http://data.gov.uk/dataset/live-traffic-information-from-the-highways-agency-road-network</a>.</p>
-  <p>Local copy in file <code>Roadworks.xml</code> (to avoid same-origin restriction problems)</p>
+  <p>Local copies in file <code>Roadworks.xml</code> and <code>Unplanned.xml</code> (to avoid same-origin restriction problems)</p>
   <div>
+    <h3 id="collapser">(Collapser)</h3>
     <table>
       <thead>
         <row>
@@ -23,7 +36,7 @@
           <th>Location</th>
           <th>Start</th>
           <th>End</th>
-          <th>Description</th>
+          <th class>Description</th>
         </row>
       </thead>
       <tbody id="ListRoadWorks">
@@ -34,7 +47,7 @@
           <td>M42 J6 southbound access</td>
           <td>2012-02-05T15:00:00Z</td>
           <td>2012-02-09T18:00:00Z</td>
-          <td>On the M42 southbound entry slip at junction J6 , there are currently delays of 10 mins due to an entertainment event . Expect disruption until 6:00 pm.</td>
+          <td>(description)/td>
         </row>
       </tbody>
     </table>

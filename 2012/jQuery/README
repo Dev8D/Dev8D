@@ -12,6 +12,7 @@ Part 1: Basic jQuery
 1-4. Functions - breaking out jQuery handler functions and jQuery objects
 1-5. Selectors - different simple content selectors
 1-6. Modularizing jQuery code; (organization, $, namespaces)
+     - http://docs.jquery.com/Using_jQuery_with_Other_Libraries
 1-7. Simple dynamic page content (hiding sections)
 
 
@@ -21,12 +22,15 @@ Part 2: ??
 Part 3: Further jQuery
 3-1: Fully dynamic page content
 3-2: Ajax calls (and same-origin restriction)
-3-3: Complex, multi-stage call-backs
+3-3: Multi-stage call-backs
 3-4: Using plugins
+     - http://archive.plugins.jquery.com/projects/plugins
+     - http://www.aakashweb.com/resources/pages/demos/jquery-collapser/
 3-5: Creating plugins
+     - http://docs.jquery.com/Plugins/Authoring
+
 3-6: jQuery-associated data
 3-7: qunit: jQuery unit testing
-
 
 Part 4: ??
 

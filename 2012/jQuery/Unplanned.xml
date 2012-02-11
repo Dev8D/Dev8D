@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<d2LogicalModel xmlns="http://datex2.eu/schema/1_0/1_0" modelBaseVersion="1.0">
+  <exchange>
+    <supplierIdentification>
+      <country>gb</country>
+      <nationalIdentifier>NTCC</nationalIdentifier>
+    </supplierIdentification>
+  </exchange>
+  <payloadPublication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="SituationPublication" lang="en">
+    <publicationTime>2012-02-09T21:43:10Z</publicationTime>
+    <publicationCreator>
+      <country>gb</country>
+      <nationalIdentifier>NTCC</nationalIdentifier>
+    </publicationCreator>
+    <situation id="GUID515078994">
+      <headerInformation>
+        <areaOfInterest>national</areaOfInterest>
+        <confidentiality>restrictedToAuthoritiesTrafficOperatorsAndPublishers</confidentiality>
+        <informationUsage>broadcast</informationUsage>
+        <informationStatus>real</informationStatus>
+      </headerInformation>
+      <situationRecord xsi:type="VehicleObstruction" id="GUID1-515079031">
+        <situationRecordCreationReference>U-12-0209-0371</situationRecordCreationReference>
+        <situationRecordCreationTime>2012-02-09T19:36:08Z</situationRecordCreationTime>
+        <situationRecordVersion>4</situationRecordVersion>
+        <situationRecordVersionTime>2012-02-09T20:39:20Z</situationRecordVersionTime>
+        <situationRecordFirstSupplierVersionTime>2012-02-09T20:39:20Z</situationRecordFirstSupplierVersionTime>
+        <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+        <sourceInformation>
+          <sourceCountry>gb</sourceCountry>
+          <sourceName>
+            <value lang="en">Call from NERCC </value>
+          </sourceName>
+        </sourceInformation>
+        <validity>
+          <validityStatus>definedByValidityTimeSpec</validityStatus>
+          <validityTimeSpecification>
+            <overallStartTime>2012-02-09T19:36:16Z</overallStartTime>
+            <overallEndTime>2012-02-09T22:30:00Z</overallEndTime>
+            <validPeriod>
+              <startOfPeriod>2012-02-09T19:36:16Z</startOfPeriod>
+              <endOfPeriod>2012-02-09T22:30:00Z</endOfPeriod>
+            </validPeriod>
+          </validityTimeSpecification>
+        </validity>
+        <impact>
+          <impactOnTraffic>freeFlow</impactOnTraffic>
+          <impactDetails>
+            <capacityRemaining>50.0</capacityRemaining>
+            <numberOfLanesRestricted>1</numberOfLanesRestricted>
+            <numberOfOperationalLanes>1</numberOfOperationalLanes>
+            <originalNumberOfLanes>2</originalNumberOfLanes>
+            <trafficRestrictionType>carriagewayPartiallyObstructed</trafficRestrictionType>
+          </impactDetails>
+          <delays>
+            <delayTimeValue>0.0</delayTimeValue>
+          </delays>
+        </impact>
+        <nonGeneralPublicComment>
+          <comment>
+            <value lang="en">At the junction of the A1 and the M62 J33 , minor delays are possible due to a broken down vehicle closing one lane. Normal traffic conditions expected from 10:30 pm.
+
+
+
+Link to Multimap:
+
+Unavailable
+
+
+
+Link to Streetmap: 
+
+http://streetmap.co.uk/grid/448551,422500
+
+
+
+Link to Disclaimer: http://www.highways.gov.uk/aboutus/2301.aspx</value>
+          </comment>
+        </nonGeneralPublicComment>
+        <groupOfLocations>
+          <locationContainedInGroup xsi:type="Point">
+            <tpegpointLocation xsi:type="TPEGSimplePoint">
+              <tpegDirection>unknown</tpegDirection>
+              <tpegLocationType>intersection</tpegLocationType>
+              <point xsi:type="TPEGJunction">
+                <pointCoordinates>
+                  <latitude>53.69671</latitude>
+                  <longitude>-1.266154</longitude>
+                </pointCoordinates>
+                <name>
+                  <descriptor>
+                    <value lang="en">unknown</value>
+                  </descriptor>
+                  <tpegDescriptorType>junctionName</tpegDescriptorType>
+                </name>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">A1</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName1</tpegDescriptorType>
+                </ilc>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">M62</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName2</tpegDescriptorType>
+                </ilc>
+              </point>
+            </tpegpointLocation>
+          </locationContainedInGroup>
+        </groupOfLocations>
+        <vehicleObstructionType>brokenDownVehicle</vehicleObstructionType>
+      </situationRecord>
+    </situation>
+    <situation id="GUID515103761">
+      <headerInformation>
+        <areaOfInterest>national</areaOfInterest>
+        <confidentiality>restrictedToAuthoritiesTrafficOperatorsAndPublishers</confidentiality>
+        <informationUsage>broadcast</informationUsage>
+        <informationStatus>real</informationStatus>
+      </headerInformation>
+      <situationRecord xsi:type="AbnormalTraffic" id="GUID1-515103762">
+        <situationRecordCreationReference>U-12-0209-0418</situationRecordCreationReference>
+        <situationRecordCreationTime>2012-02-09T21:38:16Z</situationRecordCreationTime>
+        <situationRecordVersion>1</situationRecordVersion>
+        <situationRecordVersionTime>2012-02-09T21:38:26Z</situationRecordVersionTime>
+        <situationRecordFirstSupplierVersionTime>2012-02-09T21:38:26Z</situationRecordFirstSupplierVersionTime>
+        <probabilityOfOccurrence>certain</probabilityOfOccurrence>
+        <sourceInformation>
+          <sourceCountry>gb</sourceCountry>
+          <sourceName>
+            <value lang="en">TCC System</value>
+          </sourceName>
+        </sourceInformation>
+        <validity>
+          <validityStatus>definedByValidityTimeSpec</validityStatus>
+          <validityTimeSpecification>
+            <overallStartTime>2012-02-09T21:38:22Z</overallStartTime>
+            <overallEndTime>2012-02-09T22:45:00Z</overallEndTime>
+            <validPeriod>
+              <startOfPeriod>2012-02-09T21:38:22Z</startOfPeriod>
+              <endOfPeriod>2012-02-09T22:45:00Z</endOfPeriod>
+            </validPeriod>
+          </validityTimeSpecification>
+        </validity>
+        <impact>
+          <impactOnTraffic>heavy</impactOnTraffic>
+          <impactDetails>
+            <capacityRemaining>100.0</capacityRemaining>
+            <numberOfLanesRestricted>1</numberOfLanesRestricted>
+            <numberOfOperationalLanes>1</numberOfOperationalLanes>
+            <originalNumberOfLanes>1</originalNumberOfLanes>
+            <trafficRestrictionType>carriagewayPartiallyObstructed</trafficRestrictionType>
+          </impactDetails>
+          <delays>
+            <delayTimeValue>600.0</delayTimeValue>
+          </delays>
+        </impact>
+        <nonGeneralPublicComment>
+          <comment>
+            <value lang="en">On the A5 from Harpenden towards Cannock between the junctions with the A508 and the A43, there are currently delays of 10 mins due to heavy traffic . Normal traffic conditions expected from 10:45 pm.
+
+
+
+Link to Multimap:
+
+Unavailable
+
+
+
+Link to Streetmap: 
+
+http://streetmap.co.uk/grid/475533,243184
+
+
+
+Link to Disclaimer: http://www.highways.gov.uk/aboutus/2301.aspx</value>
+          </comment>
+        </nonGeneralPublicComment>
+        <groupOfLocations>
+          <locationContainedInGroup xsi:type="Point">
+            <tpegpointLocation xsi:type="TPEGFramedPoint">
+              <tpegDirection>northBound</tpegDirection>
+              <tpegLocationType>framedPoint</tpegLocationType>
+              <framedPoint>
+                <pointCoordinates>
+                  <latitude>52.081882</latitude>
+                  <longitude>-0.899147</longitude>
+                </pointCoordinates>
+                <name>
+                  <descriptor>
+                    <value lang="en">A5 northbound between A422/A508 and A43</value>
+                  </descriptor>
+                  <tpegDescriptorType>linkName</tpegDescriptorType>
+                </name>
+              </framedPoint>
+              <to xsi:type="TPEGJunction">
+                <pointCoordinates>
+                  <latitude>52.139458</latitude>
+                  <longitude>-0.996726</longitude>
+                </pointCoordinates>
+                <name>
+                  <descriptor>
+                    <value lang="en">unknown</value>
+                  </descriptor>
+                  <tpegDescriptorType>junctionName</tpegDescriptorType>
+                </name>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">A5</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName1</tpegDescriptorType>
+                </ilc>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">A43</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName2</tpegDescriptorType>
+                </ilc>
+              </to>
+              <from xsi:type="TPEGJunction">
+                <pointCoordinates>
+                  <latitude>52.06649</latitude>
+                  <longitude>-0.870801</longitude>
+                </pointCoordinates>
+                <name>
+                  <descriptor>
+                    <value lang="en">unknown</value>
+                  </descriptor>
+                  <tpegDescriptorType>junctionName</tpegDescriptorType>
+                </name>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">A5</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName1</tpegDescriptorType>
+                </ilc>
+                <ilc>
+                  <descriptor>
+                    <value lang="en">A508</value>
+                  </descriptor>
+                  <tpegDescriptorType>tpegILCName2</tpegDescriptorType>
+                </ilc>
+              </from>
+            </tpegpointLocation>
+          </locationContainedInGroup>
+        </groupOfLocations>
+        <abnormalTrafficType>slowTraffic</abnormalTrafficType>
+      </situationRecord>
+    </situation>
+  </payloadPublication>
+</d2LogicalModel>
