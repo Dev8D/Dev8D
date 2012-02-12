@@ -5,7 +5,10 @@ needed to conduct the session offline.  These can be downloaded as a ZIP
 file via the github "ZIP" tab for the repository.
 
 
-Part 1: Basic jQuery (code and slides)
+Part 1: Javascript intro and basics??
+
+
+Part 2: Basic jQuery (code and slides)
 1-1. Hello world
 1-2. Hello world personalized - simple content manipulation
 1-3. Hello world styled - simple style manipulation
@@ -16,10 +19,10 @@ Part 1: Basic jQuery (code and slides)
 1-7. Simple dynamic page content (hiding sections)
 
 
-Part 2: ??
+Part 4: ??
 
 
-Part 3: Further jQuery (code only for these)
+Part 4: Further jQuery (code only for these)
 3-1: Fully dynamic page content
 3-2: Ajax calls (and same-origin restriction)
      - 08-Roadworks.html
@@ -37,16 +40,17 @@ Part 3: Further jQuery (code only for these)
      - 12-SelectorPluginTests.html (work in progress)
      - http://docs.jquery.com/QUnit
 
-Part 4: ??
-
 
 ----
 
 Notes:
 
 Javascript traps:
-- default global namespace
-- forgetting 'var'
-- 'this' in callbacks
+- objects: the universal "wrappoer"
 - prototype inheritance
+- default global namespace
+- 'this' in callbacks
+- forgetting 'var'
 
+jQuery:
+- find vs filter

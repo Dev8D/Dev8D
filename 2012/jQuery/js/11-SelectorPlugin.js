@@ -20,8 +20,8 @@
     {
         // Update display
         var currsel = _selector.data("currentselection");
-        $(options.selections[currsel].selector).hide();
-        $(options.selections[nextsel].selector).show();
+        $(options.target).filter(options.selections[currsel].selector).hide();
+        $(options.target).filter(options.selections[nextsel].selector).show();
         $(options.showing).text(options.selections[nextsel].label);
         _selector.data("currentselection", nextsel);
         // Set up for next update
