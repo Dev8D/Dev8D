@@ -34,7 +34,8 @@ Part 3: Further jQuery (code only for these)
      - 11-RoadworksSelectorPlugin.html
      - http://docs.jquery.com/Plugins/Authoring    
 3-7: qunit: jQuery unit testing
-     @@TODO: provide simple unit test for selector plugin
+     - 12-SelectorPluginTests.html (work in progress)
+     - http://docs.jquery.com/QUnit
 
 Part 4: ??
 

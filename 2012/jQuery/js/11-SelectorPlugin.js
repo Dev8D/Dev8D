@@ -36,7 +36,7 @@
     //   hide all possible selections, show default
     for ( var i in options.selections )
     {
-        $(options.selections[i].selector).hide();
+        $(options.target).filter(options.selections[i].selector).hide();
     };
     _selector.data("currentselection", 0);    // Just to make sure it's defined ...
     showSelection(options.defaultselection);
