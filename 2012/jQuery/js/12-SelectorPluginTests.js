@@ -105,6 +105,6 @@ test("Test selector click", 38, function()
   ok($("#selectablelist li:eq(2)").is(":hidden"), "Third list item visible?");
 });
 
-test("Test mkore...", function() {
+test("Test more...", function() {
   ok( true, "all pass" );
 });

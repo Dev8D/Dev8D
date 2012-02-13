@@ -26,10 +26,16 @@ Part 4: Further jQuery (code only for these)
 3-1: Fully dynamic page content
 3-2: Ajax calls (and same-origin restriction)
      - 08-Roadworks.html
+     - Note use of file: URIs to avoid same-origin problems and uncertain network
+     - Should work just as well if all files loaded from HTTP server
+     - Use of proxying is one technique to combine app on one server with data from another
 3-3: Multi-stage call-backs
      - 09-RoadworksUnplanned.html
+     - This is a simple example, probably not the best way; hard to compose functions
+     - See also: mochikit Deferred (jQuery has something similar), and monad-inspired 
 3-4: Using plugins
      - 10-RoadworksCollapser.html
+     - Example of using a plugin
      - http://archive.plugins.jquery.com/projects/plugins
      - http://www.aakashweb.com/resources/pages/demos/jquery-collapser/
 3-5: Creating plugins
@@ -37,7 +43,7 @@ Part 4: Further jQuery (code only for these)
      - 11-RoadworksSelectorPlugin.html
      - http://docs.jquery.com/Plugins/Authoring    
 3-7: qunit: jQuery unit testing
-     - 12-SelectorPluginTests.html (work in progress)
+     - 12-SelectorPluginTests.html
      - http://docs.jquery.com/QUnit
 
 
